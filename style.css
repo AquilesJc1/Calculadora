@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.inputs{
+    display: none;
+}
+
+#delete{
+    background-color: red;
+    color: white;
+}
+
+#titulo{
+    text-align: center;
+    padding: 10px;
+}
+
+body{
+    /* background-color: rgb(240, 240, 240); */
+    background-color: rgb(240, 240, 240);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    width: 280px;
+    padding: 5px;
+    background-color: #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0 20px rgb(231, 231, 231);
+}
+
+#input{
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+.calculadora button{
+    width: 64px;
+    height: 60px;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.fixed{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.calculadora button:hover{
+    background-color: #ccc;
+    border: none;
+}
+
+.btn_tema{
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+}
+
+.btn_tema #btn_tema{
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0 10px #ccc;
+}
+
+.btn_tema img{
+    animation: girar infinite 10s linear;     
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(1turn);
+    }
+}
